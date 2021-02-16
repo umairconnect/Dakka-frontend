@@ -1,0 +1,19 @@
+module.exports = {
+    css: {
+        modules: true,
+        loaderOptions: {
+            postcss: {
+                test: /\.css$/,
+                use: [
+                    'vue-style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: { importLoaders: 1 }
+                    },
+                    'postcss-loader'
+                ]
+            }
+
+        }
+    },
+}
