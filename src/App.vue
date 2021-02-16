@@ -10,6 +10,7 @@
     @import "assets/scss/style";
 </style>
 <script>
+
 import HeaderArea from './components/HeaderArea'
 
 export default {
