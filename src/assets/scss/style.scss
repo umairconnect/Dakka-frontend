@@ -1,3 +1,20 @@
+// Variable colors
+$primary: #bd9e89;
 nav {
-  background: red;
+  border-bottom: 3px solid $primary;
+  ul {
+    li {
+      margin: 1rem 0.5rem;
+      a {
+        text-decoration: auto;
+        color: green;
+        border: 1px solid;
+        padding: 0.4rem 1rem;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+input[type="text"]{
+
 }

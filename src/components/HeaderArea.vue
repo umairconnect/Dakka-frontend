@@ -3,8 +3,6 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
 
-                <router-link class="navbar-brand" to="/">TEST</router-link>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -22,21 +20,23 @@
                         <li class="nav-item">
                             <router-link to="Login"> Courses</router-link>
                         </li>
+
                         <li class="nav-item">
                             <router-link to="Login"> Trainers</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="Login"> Trainers</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link to="Login"> home</router-link>
+                            <router-link to="/"> home</router-link>
                         </li>
                     </ul>
                 </div>
+                <router-link class="navbar-brand" to="/">TEST</router-link>
             </div>
         </nav>
+        <div class="header_banner">
+            <h3>Find & Search Course </h3>
+            <input type="text" placeholder="Search courses" />
+        </div>
     </header>
-    
 </template>
 
 <script>
@@ -44,4 +44,19 @@
         name: "Header-area"
     }
 </script>
-
+<style lang="scss">
+    header {
+        .header_banner {
+            background-image: url("../assets/img/online-learning-banner.jpg");
+            height: 340px;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            h3 {
+                text-align: center;
+                padding: 3rem 2rem 1rem 2rem;
+                color: white;
+            }
+        }
+    }
+</style>
