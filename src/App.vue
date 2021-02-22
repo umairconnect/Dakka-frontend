@@ -1,7 +1,10 @@
 <template>
   <div id="app">
       <header-area></header-area>
-      <router-view/>
+
+      <couses-list />
+
+      <!--<router-view/>-->
   </div>
 </template>
 
@@ -12,11 +15,13 @@
 <script>
 
 import HeaderArea from './components/HeaderArea'
+import CousesList from './components/Courses'
 
 export default {
   name: 'App',
   components: {
-      HeaderArea
+      HeaderArea,
+      CousesList
   }
 }
 </script>

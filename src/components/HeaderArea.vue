@@ -29,12 +29,12 @@
                         </li>
                     </ul>
                 </div>
-                <router-link class="navbar-brand" to="/">TEST</router-link>
+                <router-link class="navbar-brand" to="/">Logo</router-link>
             </div>
         </nav>
         <div class="header_banner">
             <h3>Find & Search Course </h3>
-            <input type="text" placeholder="Search courses" />
+            <input type="text" placeholder="Search courses" class="header_search" />
         </div>
     </header>
 </template>

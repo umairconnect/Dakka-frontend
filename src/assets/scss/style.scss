@@ -8,13 +8,23 @@ nav {
       a {
         text-decoration: auto;
         color: green;
-        border: 1px solid;
+        border: 1px solid $primary;
         padding: 0.4rem 1rem;
         border-radius: 7px;
+        &:hover {
+          background: $primary;
+          color: white
+        }
       }
     }
   }
 }
-input[type="text"]{
-
+.header_search {
+  padding: 1rem;
+  border: 0px;
+  width: 570px;
+  max-width: 55%;
+  &:focus {
+    outline: none;
+  }
 }
