@@ -1,8 +1,8 @@
 <template>
   <div id="app">
       <header-area></header-area>
-
-      <couses-list />
+      <courses-list v-if="this.$route.name == 'courses'" />
+      <register v-if="this.$route.name == 'Register'"></register>
 
       <!--<router-view/>-->
   </div>
@@ -11,17 +11,23 @@
 <style lang="scss">
     @import "~bootstrap/scss/bootstrap";
     @import "assets/scss/style";
+
 </style>
+
+
 <script>
 
 import HeaderArea from './components/HeaderArea'
-import CousesList from './components/Courses'
+import CoursesList from './components/Courses'
+import Register from './components/register'
+
 
 export default {
   name: 'App',
   components: {
       HeaderArea,
-      CousesList
+      CoursesList,
+      Register
   }
 }
 </script>

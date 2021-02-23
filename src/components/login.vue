@@ -1,8 +1,7 @@
 <template>
-    <div class="container-fluid">
-        <input type="text" name="" />
-        <input type="password" name="" />
-    </div>
+    <b-modal id="login_modal" title="Login">
+        <p class="my-4">Hello from login</p>
+    </b-modal>
 </template>
 
 <script>

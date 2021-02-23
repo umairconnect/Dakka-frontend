@@ -9,7 +9,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <router-link to="Login">Registration</router-link>
+                            <router-link to="Register">Registration</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to="Login">Login</router-link>
@@ -32,7 +32,7 @@
                 <router-link class="navbar-brand" to="/">Logo</router-link>
             </div>
         </nav>
-        <div class="header_banner">
+        <div class="header_banner" v-if="this.$route.name !== 'Register'">
             <h3>Find & Search Course </h3>
             <input type="text" placeholder="Search courses" class="header_search" />
         </div>

@@ -1,5 +1,8 @@
 // Variable colors
 $primary: #bd9e89;
+section {
+  padding: 30px;
+}
 nav {
   border-bottom: 3px solid $primary;
   ul {
@@ -27,4 +30,9 @@ nav {
   &:focus {
     outline: none;
   }
+}
+
+//Form fields
+.form-group {
+   margin: 1rem 0;
 }
