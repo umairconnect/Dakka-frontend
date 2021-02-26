@@ -1,5 +1,7 @@
-// Variable colors
-$primary: #bd9e89;
+// import files
+
+@import "footer";
+
 section {
   padding: 30px;
 }
@@ -15,13 +17,15 @@ nav {
         padding: 0.4rem 1rem;
         border-radius: 7px;
         &:hover {
-          background: $primary;
-          color: white
+          background: $footer_dark_color;
+          color: $offwhite_grey;
+          border: 1 solid transparent;
         }
       }
     }
   }
 }
+
 .header_search {
   padding: 1rem;
   border: 0px;
@@ -32,7 +36,41 @@ nav {
   }
 }
 
-//Form fields
+// Form fields
 .form-group {
    margin: 1rem 0;
+}
+
+// subscribe field
+
+.subscribe_field {
+  display: flex;
+  input {
+    background-color: #fff;
+    padding: 12px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.1rem;
+    display: block;
+    border: solid 2px #bbb;
+    color: #6f6f6f;
+    outline: 0;
+    &:focus {
+      outline: 0;
+    }
+  }
+  button {
+    background-color: #e8404d;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 7px 17px;
+    color: #fff;
+    margin-left: -5px!important;
+    transition: background-color .4s ease-out;
+
+    &:hover {
+      background-color: #68a8dc;
+
+    }
+  }
 }

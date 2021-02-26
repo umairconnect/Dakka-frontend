@@ -2,7 +2,8 @@
   <div id="app">
       <header-area></header-area>
       <courses-list v-if="this.$route.name == 'courses'" />
-      <register v-if="this.$route.name == 'Register'"></register>
+      <register v-if="this.$route.name == 'register'"></register>
+      <footer-area></footer-area>
 
       <!--<router-view/>-->
   </div>
@@ -10,6 +11,7 @@
 
 <style lang="scss">
     @import "~bootstrap/scss/bootstrap";
+    @import "assets/scss/variable";
     @import "assets/scss/style";
 
 </style>
@@ -18,8 +20,10 @@
 <script>
 
 import HeaderArea from './components/HeaderArea'
+import FooterArea from './components/FooterArea'
 import CoursesList from './components/Courses'
 import Register from './components/register'
+
 
 
 export default {
@@ -27,7 +31,8 @@ export default {
   components: {
       HeaderArea,
       CoursesList,
-      Register
+      Register,
+      FooterArea
   }
 }
 </script>

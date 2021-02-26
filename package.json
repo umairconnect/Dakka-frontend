@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "Font-Awesome": "FortAwesome/Font-Awesome",
     "and": "^0.0.3",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta2",
