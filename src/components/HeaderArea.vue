@@ -9,20 +9,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <router-link to="register">Registration</router-link>
+                            <router-link to="/register">Registration</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="login">Login</router-link>
+                            <router-link to="/login">Login</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="login">Contact Us</router-link>
+                            <router-link to="/login">Contact Us</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="courses"> Courses</router-link>
+                            <router-link to="/courses"> Courses</router-link>
                         </li>
 
                         <li class="nav-item">
-                            <router-link to="Login"> Trainers</router-link>
+                            <router-link to="/trainer"> Trainers</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to="/"> home</router-link>
